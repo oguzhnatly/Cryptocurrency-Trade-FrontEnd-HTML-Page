@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - CryptoEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CryptoEX Trading Platform. It's developed for buy-sell, exchange, market activities etc. Fully responsive, creative and clean design." />
+    <meta name="keywords" content="crypto Exchange, crypto theme, cryptocurrency dashboard, crypto website, cryptocurrency" />
+    <meta content="Oguzhan Atalay" name="author" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Main css File -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Other css Files -->
+    <link rel="stylesheet" href="css/sweetalert.css">
+</head>
+<body class="crypt-dark">
+    <header>
+    <div class="crypt-header">
+        <div class="container-fluid crypt-container">
+            <div class="row">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12">
+                    <div class="row">
+                        <div class="crypt-logo"><a href="/"><img src="images/logo.png" alt="CryptoEX Trading Platform by Oguzhan Atalay" style="height: 45px;top: 5px;"></a></div>
+                    </div>
+                </div>
+                <i class="menu-toggle fas fa-bars d-xs-block d-sm-block d-md-none"></i>
+                <div class="mobile-menu col-xl-11 col-lg-11 col-md-11 d-none d-md-block d-lg-block">
+                    <ul class="crypt-heading-menu float-left">
+                        <li class="crypt-heading-menu-icon crypt-heading-menu-toggle">
+                            <a href="javascript:;"><i class="heading-menu-toggle-icon fas fa-globe"></i></a>
+                            <div class="crypt-nav-tab">
+                                <ul>
+                                    <li><a href="#"><img src="images/flags/united-states.png"><span>English</span></a></li>
+                                    <li><a href="#"><img src="images/flags/spain.png"><span>Spanish</span></a></li>
+                                    <li><a href="#"><img src="images/flags/germany.png"><span>German</span></a></li>
+                                    <li><a href="#"><img src="images/flags/france.png"><span>French</span></a></li>
+                                    <li><a href="#"><img src="images/flags/japan.png"><span>Japanese</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                markets
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="markets.html">Markets</a>
+                                <a class="dropdown-item" href="markets-line.html">Markets Line</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                finance
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="technical-analysis.html">Technical Analysis</a>
+                                <a class="dropdown-item" href="economic-calendar.html">Economic Calendar</a>
+                                <a class="dropdown-item" href="screener.html">Screener</a>
+                            </div>
+                        </li>
+                        <li><a href="buy-sell.html">buy-sell</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                trade
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="trade.html">Trade Basic</a>
+                                <a class="dropdown-item" href="trade2.html">Trade Edited</a>
+                                <a class="dropdown-item" href="trade-full.html">Trade FullScreen</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="crypt-heading-menu float-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="profile.html">Profile</a>
+                                <a class="dropdown-item" href="forgot.html">Forgot Password</a>
+                                <a class="dropdown-item" href="login.html">Auth Login</a>
+                                <a class="dropdown-item" href="register.html">Register</a>
+                                <a class="dropdown-item" href="404.html">404</a>
+                            </div>
+                        </li>
+                        <li><a href="contact-us.html">contact us</a></li>
+                        <li class="crypt-box-menu"><a href="login.html">login</a></li>
+                        <li class="crypt-box-menu"><a href="register.html">
+                            <button>open an account</button>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="text-center pt-5 pb-5">
+                    <h3 class="p-5">Welcome to CryptoEX</h3>
+                    <div class="crypt-form shadow-lg rounded p-5 mt-3">
+                        <div class="crypt-form-top text-center">
+                            <div>
+                                <h5>Log in</h5>
+                                <div class="info-text"><p>Please check that you are visiting the correct URL</p></div>
+                            <div class="safeURL"><img src="images/lock.svg" alt="Safe URL"><span>https:</span><span>//auth.cryptoex.com</span></div></div></div>
+                        <form action="profile.html">
+                            <div class="form-group">
+                                <div class="form-label-group">
+                                    <label class="form-label" for="login1-email">Email or AccountID</label>
+                                    <a class="right-text" href="#">Need Help?</a>
+                                </div>
+                                <input type="text" class="form-control" name="email" id="login1-email">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-label-group">
+                                    <label class="form-label" for="login1-password">Password</label>
+                                    <a class="right-text" href="forgot.html">Forgot Password?</a>
+                                </div>
+                                <div class="form-control-wrap">
+                                    <input type="password" class="form-control" id="login1-password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-lg btn-green btn-block mt-2">Sign in</button>
+                            </div>
+                        </form>
+                        <div class="float-right form-itext">
+                            <span class="pr-1">Not on our platform yet?</span><a href="register.html">Register</a>
+                        </div>
+                        <div class="text-center pt-5 pb-3">
+                            <h6 class="overline-title"><span>or</span></h6>
+                        </div>
+                        <div class="align-center pt-1 pb-3 col-12">
+                            <div class="row">
+                                <div class="col-sm-6 mt-1">
+                                    <a href="#" class="btn btn-block btn-light"><i class="fab fa-facebook"></i> Facebook</a>
+                                </div>
+                                <div class="col-sm-6 mt-1">
+                                    <a href="#" class="btn btn-block btn-light"><i class="fab fa-google"></i> Google</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-bar-area">
+        <div class="container">
+            <div class="row">
+                <div class="footer-bar-contain col-lg-12 col-12">
+                    <div class="footer-bar-flat">
+                        <h3>Start Learning Trade Now. Completely Free!</h3>
+                        <div class="footer-bar-flat-button">
+                            <button class="btn btn-lg btn-yellow">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a href="#" class="logo-footer">
+                        <img src="images/logo.png" height="36" alt="">
+                    </a>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="list-unstyled social-icon social mb-0 mt-4">
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d">
+                    <h4 class="text-light footer-head">Company</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="contact-us.html" class="text-foot anim-b-line">Contact Us</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Our Back Accounts</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Team</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Career</a></li>
+                        <li><a href="login.html" class="text-foot anim-b-line">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d">
+                    <h4 class="text-light footer-head">Fast Conversions</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot anim-b-line">Terms of Services</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Privacy Policy</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Changelog</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Licenses</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d">
+                    <h4 class="text-light footer-head">Address</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot anim-b-line"><i class="fas fa-address-book mr-1"></i> 123 1th Street, New York, NY 00000, United States</a></li>
+                        <li><a href="tel:+11234567890" class="text-foot anim-b-line"><i class="fas fa-phone-alt mr-1"></i> +1 (123) 456 7890</a></li>
+                        <li><a href="mailto:hello@jouve.team" class="text-foot anim-b-line"><i class="fas fa-mail-bulk mr-1"></i> hello@jouve.team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer divider divider-fade divider-dark"></div>
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-left">
+                        <p class="mb-0">© 2020 CryptoEX. Created with <i class="fas fa-heart text-danger"></i> by <a href="https://github.com/oguzhnatly/Cryptocurrency-Trade-FrontEnd-HTML-Page" class="text-reset anim-b-line">Oguzhan Atalay</a>.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <ul class="list-unstyled text-sm-right mb-0">
+                        <li class="list-inline-item"><a><img class="payment-logos" src="images/payments/visa.svg" title="Visa" alt=""></a></li>
+                        <li class="list-inline-item"><a><img class="payment-logos" src="images/payments/mastercard.svg" title="Mastercard" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <!-- Bootsrap Scripts -->
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/sweetalert.js"></script>
+    <!-- Main Scripts -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>

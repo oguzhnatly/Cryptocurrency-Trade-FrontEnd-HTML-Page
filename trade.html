@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency Trade - CryptoEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CryptoEX Trading Platform. It's developed for buy-sell, exchange, market activities etc. Fully responsive, creative and clean design." />
+    <meta name="keywords" content="crypto Exchange, crypto theme, cryptocurrency dashboard, crypto website, cryptocurrency" />
+    <meta content="Oguzhan Atalay" name="author" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Main css File -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Other css Files -->
+    <link rel="stylesheet" href="css/sweetalert.css">
+</head>
+<body class="crypt-dark cryptrade1">
+    <header>
+    <div class="crypt-header">
+        <div class="container-fluid crypt-container">
+            <div class="row">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12">
+                    <div class="row">
+                        <div class="crypt-logo"><a href="/"><img src="images/logo.png" alt="CryptoEX Trading Platform by Oguzhan Atalay" style="height: 45px;top: 5px;"></a></div>
+                    </div>
+                </div>
+                <i class="menu-toggle fas fa-bars d-xs-block d-sm-block d-md-none"></i>
+                <div class="mobile-menu col-xl-11 col-lg-11 col-md-11 d-none d-md-block d-lg-block">
+                    <ul class="crypt-heading-menu float-left">
+                        <li class="crypt-heading-menu-icon crypt-heading-menu-toggle">
+                            <a href="javascript:;"><i class="heading-menu-toggle-icon fas fa-globe"></i></a>
+                            <div class="crypt-nav-tab">
+                                <ul>
+                                    <li><a href="#"><img src="images/flags/united-states.png"><span>English</span></a></li>
+                                    <li><a href="#"><img src="images/flags/spain.png"><span>Spanish</span></a></li>
+                                    <li><a href="#"><img src="images/flags/germany.png"><span>German</span></a></li>
+                                    <li><a href="#"><img src="images/flags/france.png"><span>French</span></a></li>
+                                    <li><a href="#"><img src="images/flags/japan.png"><span>Japanese</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                markets
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="markets.html">Markets</a>
+                                <a class="dropdown-item" href="markets-line.html">Markets Line</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                finance
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="technical-analysis.html">Technical Analysis</a>
+                                <a class="dropdown-item" href="economic-calendar.html">Economic Calendar</a>
+                                <a class="dropdown-item" href="screener.html">Screener</a>
+                            </div>
+                        </li>
+                        <li><a href="buy-sell.html">buy-sell</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                trade
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="trade.html">Trade Basic</a>
+                                <a class="dropdown-item" href="trade2.html">Trade Edited</a>
+                                <a class="dropdown-item" href="trade-full.html">Trade FullScreen</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="crypt-heading-menu float-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="profile.html">Profile</a>
+                                <a class="dropdown-item" href="forgot.html">Forgot Password</a>
+                                <a class="dropdown-item" href="login.html">Auth Login</a>
+                                <a class="dropdown-item" href="register.html">Register</a>
+                                <a class="dropdown-item" href="404.html">404</a>
+                            </div>
+                        </li>
+                        <li><a href="contact-us.html">contact us</a></li>
+                        <li class="crypt-box-menu"><a href="login.html">login</a></li>
+                        <li class="crypt-box-menu"><a href="register.html">
+                            <button>open an account</button>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="container-fluid crypt-container">
+        <div class="row sm-gutters">
+            <div class="col-md-12 mt-2">
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async="">{"colorTheme": "dark"}</script>
+                </div>
+            </div>
+        </div>
+        <div class="row sm-gutters">
+            <div class="col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                <div class="crypt-market-status mt-4">
+                    <div>
+                        <ul class="nav nav-tabs" id="crypt-tab">
+                            <li role="presentation"><a href="#star" data-toggle="tab" class="active show"><i class="fas fa-star"></i></a></li>
+                            <li role="presentation"><a href="#usd" class="" data-toggle="tab">usd</a></li>
+                            <li role="presentation"><a href="#btc" data-toggle="tab" class="">btc</a></li>
+                            <li role="presentation"><a href="#xrp" data-toggle="tab" class="">xrp</a></li>
+                            <li role="presentation" class="multiple-nav">
+                                <a href="#eur" data-toggle="tab" class="">EUR</a>
+                                <a href="#eur" onclick="$(this).find('.crypt-nav-tab').toggleClass('active');$(this).find('.fa-sort-down').toggleClass('rotate');" class="">
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="crypt-nav-tab">
+                                        <ul>
+                                            <li>EUR</li>
+                                            <li>GBP</li>
+                                            <li>RUB</li>
+                                            <li>TRY</li>
+                                            <li>TRX</li>
+                                            <li>UAH</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation" class="search-box">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" placeholder="Search.." class="form-control">
+                            </div>
+                            </li>
+                            <li role="presentation" class="crypt-type-box">
+                                <label for="change-field"><input type="radio" name="changeField" value="change" checked=""><i class="crypt-check-rdbt"></i>Change</label>
+                                <label for="change-field"><input type="radio" name="changeField" value="volume"><i class="crypt-check-rdbt"></i>24h Vol</label>
+                            </li>
+                        </ul>
+                        <div class="tab-content crypt-tab-content">
+                            <div role="tabpanel" class="tab-pane active show" id="star">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Coin</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="crypt-table-hover">
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane show" id="usd">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Coin</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="crypt-table-hover">
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span title="" class="pr-2" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane show" id="btc">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Coin</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane show" id="eth">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Coin</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr><tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr><tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane show" id="xrp">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Coin</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr><tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr><tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane show" id="eur">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Coin</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-down align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-down">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle"><img class="crypt-star pr-1" alt="star" src="images/star.svg" width="15"> BTC/USD</td>
+                                            <td class="crypt-up align-middle"><span class="pr-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="$ 0.1">0.00008794</span></td>
+                                            <td> <b class="crypt-up">-0.03%</b>  </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="crypt-market-status">
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li role="presentation"><a href="#recent-trades" data-toggle="tab" class="active show">recent trades</a></li>
+                            <li role="presentation"><a href="#market-depth" data-toggle="tab" class="">market depth</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active show" id="recent-trades">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Price(BTC)</th>
+                                            <th scope="col">Amount(USD)</th>
+                                            <th scope="col">Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                         <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-up">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-up">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-up">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-up">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-up">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-up">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9018.5</td>
+                                            <td class="crypt-down">1.000000</td>
+                                            <td>12:52:32</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="market-depth">
+                                <div id="darkDepthChart" style="height: 25rem;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-8 col-xxl-8">
+                <div class="crypt-gross-market-cap mt-4">
+                    <div class="row">
+                        <div class="col-3 col-sm-6 col-md-6 col-lg-4">
+                            <div class="crypt-cointext align-middle">
+                                <div class="coin-name"><span>BTC</span></div>
+                                <div class="coin-body">
+                                    <span class="coin-body-lastp crypt-down">9415.42</span>
+                                    <span class="coin-body-lastpc-mini crypt-up">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8"><path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-width="2" d="m1 6 5-4 5 4"></path></svg>
+                                        <span>1.77%</span>
+                                        <span>(168.36)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-md-3 col-lg-2">
+                            <p>24h High</p>
+                            <p>9,191.00</p>
+                        </div>
+                        <div class="col-3 col-sm-2 col-md-3 col-lg-2">
+                            <p>24h Low</p>
+                            <p>9,024.67</p>
+                        </div>
+                        <div class="col-4 col-sm-2 col-md-3 col-lg-3">
+                            <p>24h Volume</p>
+                            <p class="crypt-down">353,743,185.29 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tradingview-widget-container">
+                    <div id="crypt-examplechart"></div>
+                </div>
+                <div class="crypt-market-status crypt-buysell-box mt-1">
+                    <div class="crypt-boxed-area">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation"><a href="#bs-limit" class="active show" data-toggle="tab">limit</a></li>
+                            <li role="presentation"><a href="#bs-market" data-toggle="tab" class="">market</a></li>
+                            <li role="presentation"><a href="#bs-stoplimit" data-toggle="tab" class="">stop-limit</a></li>
+                            <div class="crypt-right-tabbox">
+                                <li role="presentation" class="crypt-box-infotext right crypt-tab-box" id="preferences">
+                                    <button onclick="$(this).closest('.crypt-tab-box#preferences').find('.crypt-nav-tab').toggleClass('active');$('.crypt-tab-box#info > .crypt-nav-tab').removeClass('active');"><i class="fas fa-cog"></i></button>
+                                    <div class="crypt-nav-tab">
+                                        <p class="crypt-type-box">
+                                            <span>Preferences</span>
+                                            <label for="preference-field" style="padding: .1rem .5rem 0 .5rem;display: block;"><input type="radio" name="preferenceField" value="value1" checked=""><i class="crypt-check-rdbt"></i>value1</label>
+                                            <label for="preference-field" style="padding: 0 .5rem 0 .5rem;display: block;"><input type="radio" name="preferenceField" value="value1" checked=""><i class="crypt-check-rdbt"></i>value2</label>
+                                            <label for="preference-field" style="padding: 0 .5rem 0 .5rem;display: block;"><input type="radio" name="preferenceField" value="value1" checked=""><i class="crypt-check-rdbt"></i>value3</label>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li role="presentation" class="crypt-box-infotext right crypt-tab-box" id="info">
+                                    <button onclick="$(this).closest('.crypt-tab-box#info').find('.crypt-nav-tab').toggleClass('active');$('.crypt-tab-box#preferences > .crypt-nav-tab').removeClass('active');"><i class="fas fa-question"></i></button>
+                                    <div class="crypt-nav-tab">
+                                        <div class="crypt-bs-ilist">
+                                            <p>Minimum Trade Amount: <span class="float-right">0.00001 BTC</span></p>
+                                            <p>Minimum Order Size: <span class="float-right">0.001 USD</span></p>
+                                            <p>Total Margin: <span class="float-right">0 USD</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="row tab-pane crypt-bs-box ml-0 mr-0 active show" id="bs-limit">
+                                <div class="col-md-6">
+                                    <div class="crypt-form-buy">
+                                        <div class="input-group mb-3">
+                                            <label for="crypt-bs-bb-price" class="col-sm-2 col-form-label">Price:</label><input type="number" class="form-control col-sm-10" id="crypt-bs-bb-price">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label for="crypt-bs-bb-amount" class="col-sm-2 col-form-label">Amount:</label><input type="number" class="form-control col-sm-10" id="crypt-bs-bb-amount">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">BTC</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label for="crypt-bs-bb-total" class="col-sm-2 col-form-label">Total:</label><input type="number" class="form-control col-sm-10" id="crypt-bs-bb-total">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3 crypt-bs-bb-list">
+                                            <label for="crypt-bs-bb-tilst" class="col-sm-2 col-form-label"></label>
+                                            <input type="button" class="form-control col-sm-10" id="crypt-bs-bb-tilst" value="25%">
+                                            <input type="button" class="form-control col-sm-10" id="crypt-bs-bb-tilst" value="50%">
+                                            <input type="button" class="form-control col-sm-10" id="crypt-bs-bb-tilst" value="75%">
+                                            <input type="button" class="form-control col-sm-10" id="crypt-bs-bb-tilst" value="100%">
+                                        </div>
+                                        <div class="crypt-bs-ilist">
+                                            <p>Available: <span class="float-right">0 USD</span></p>
+                                            <p>Margin: <span class="float-right">0 USD</span></p>
+                                            <p>Fee: <span class="float-right">0 USD</span></p>
+                                        </div>
+                                        <div class="crypt-bs-button crypt-button-buy"><a href="#">Buy</a></div>
+                                    </div>
+                                </div>
+                                <div class="crypt-bs-separator"></div>
+                                <div class="col-md-6">
+                                    <div class="crypt-form-sell">
+                                        <div class="input-group mb-3">
+                                            <label for="crypt-bs-sb-price" class="col-sm-2 col-form-label">Price:</label><input type="number" class="form-control col-sm-10" id="crypt-bs-sb-price">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label for="crypt-bs-sb-amount" class="col-sm-2 col-form-label">Amount:</label><input type="number" class="form-control col-sm-10" id="crypt-bs-sb-amount">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">BTC</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label for="crypt-bs-sb-total" class="col-sm-2 col-form-label">Total:</label><input type="number" class="form-control col-sm-10" id="crypt-bs-sb-total">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3 crypt-bs-sb-list">
+                                            <label for="crypt-bs-sb-tilst" class="col-sm-2 col-form-label"></label>
+                                            <input type="button" class="form-control col-sm-10" id="crypt-bs-sb-tilst" value="25%">
+                                            <input type="button" class="form-control col-sm-10" id="crypt-bs-sb-tilst" value="50%">
+                                            <input type="button" class="form-control col-sm-10" id="crypt-bs-sb-tilst" value="75%">
+                                            <input type="button" class="form-control col-sm-10" id="crypt-bs-sb-tilst" value="100%">
+                                        </div>
+                                        <div class="crypt-bs-ilist">
+                                            <p>Available: <span class="float-right">0 BTC</span></p>
+                                            <p>Margin: <span class="float-right">0 BTC</span></p>
+                                            <p>Fee: <span class="float-right">0 BTC</span></p>
+                                        </div>
+                                        <div class="crypt-bs-button crypt-button-sell"><a href="#">Sell</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3 col-xl-2 col-xxl-2">
+                <div class="crypt-market-status mt-4">
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="crypt-box-infotext"><p>order book</p></li>
+                            <li role="presentation" class="crypt-box-infotext right crypt-tab-box">
+                                <button onclick="$(this).closest('.crypt-tab-box').find('.crypt-nav-tab').toggleClass('active');"><svg id="Capa_1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><circle cx="256" cy="431.996" r="80.004"></circle><path d="m0 0h512v60.048h-512z"></path><path d="m10.866 90.048 165.13 98.491v148.727l160.008-49.27v-99.457l165.13-98.491z"></path></svg></button>
+                                <div class="crypt-nav-tab">
+                                    <ul>
+                                        <li class="text-right">ALL</li>
+                                        <li class="text-right crypt-up">BTC Buying</li><li class="text-right crypt-down">USD Buying</li></ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="crypt-orderbook tab-pane active" id="crypt-order-buying" data-id="orderbook-btc">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Time</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Volume</th>
+                                        </tr>
+                                    </thead>
+                                <tbody>
+                                    <tr class="red-bg-90">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.000056</td>
+                                        <td>5.3424984</td>
+                                    </tr>
+                                    <tr class="red-bg-80">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000564</td>
+                                        <td>6.6768876</td>
+                                    </tr>
+                                    <tr class="red-bg-60">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-50">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-40">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-30">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-20">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-10">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-5">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-5">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-0">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-0">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-0">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-0">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                    <tr class="red-bg-0">
+                                        <td>22:35:59</td>
+                                        <td class="crypt-down">0.0000234</td>
+                                        <td>4.3456600</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="crypt-orderbook tab-pane active" id="crypt-orders-info">
+                            <div class="crypt-down crypt-orders-text"><i class="fas fa-long-arrow-alt-down"></i><strong><span class="price">9018.5</span></strong><span>$9018.5</span></div>
+                            <div class="crypt-down crypt-orders-text"><strong><!-- CUSTOM FUNCTION AREA THAT YOU CAN USE WHATEVER YOU WANT --></strong></div>
+                                <div class="crypt-signal access-normal" data-toggle="tooltip" data-placement="right" title="" data-original-title="Signal">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45.959px" height="45.959px" viewBox="0 0 45.959 45.959" style="enable-background:new 0 0 45.959 45.959;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M33.979,43.062c0,1.601,1.296,2.896,2.896,2.896h4.209c1.599,0,2.896-1.296,2.896-2.896V2.896
+                                                    c0-1.6-1.296-2.896-2.896-2.896h-4.209c-1.601,0-2.896,1.296-2.896,2.896V43.062z"></path>
+                                                <path d="M17.979,43.062c0,1.601,1.296,2.896,2.896,2.896h4.209c1.599,0,2.896-1.296,2.896-2.896V12.896
+                                                    c0-1.6-1.296-2.896-2.896-2.896h-4.209c-1.599,0-2.896,1.296-2.896,2.896V43.062z"></path>
+                                                <path d="M1.979,43.062c0,1.601,1.296,2.896,2.896,2.896h4.209c1.599,0,2.896-1.296,2.896-2.896V22.896
+                                                    c0-1.6-1.296-2.896-2.896-2.896H4.875c-1.6,0-2.896,1.296-2.896,2.896V43.062z"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="crypt-orderbook tab-pane active" id="crypt-order-selling" data-id="orderbook-usd">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr class="green-bg-90">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.000056</td>
+                                            <td>5.3424984</td>
+                                        </tr>
+                                        <tr class="green-bg-80">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000564</td>
+                                            <td>6.6768876</td>
+                                        </tr>
+                                        <tr class="green-bg-70">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-60">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-50">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-40">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-30">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-10">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-5">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-5">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-0">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-0">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-0">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-0">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-0">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr class="green-bg-0">
+                                            <td>22:35:59</td>
+                                            <td class="crypt-up">0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid crypt-container mt-4 pb-4">
+        <div class="row sm-gutters">
+            <div class="col-lg-6">
+                <div>
+                    <div class="crypt-market-status">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li role="presentation"><a href="#active-orders" class="active show" data-toggle="tab">Active Orders</a></li>
+                                <li role="presentation"><a href="#closed-orders" data-toggle="tab" class="">Closed Orders</a></li>
+                                <li role="presentation"><a href="#balance" data-toggle="tab" class="">Balance</a></li>
+                            </ul>
+                            <div class="tab-content crypt-fixheigh-b">
+                                <div role="tabpanel" class="tab-pane active show" id="active-orders">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Coin</th>
+                                                <th scope="col" class="text-center">Buy/sell</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Fee</th>
+                                                <th scope="col">Total Profit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td></tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-down text-center">SELL</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-down text-center">SELL</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-down text-center">SELL</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-down text-center">SELL</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-down text-center">SELL</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                            <td>5.3424984 USD</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="closed-orders">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Coin</th>
+                                                <th scope="col" class="text-center">Buy/sell</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Fee</th>
+                                                <th scope="col">Total Profit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="text-center">BUY Cancelled</td>
+                                                <td title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td></tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-up">BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-down">BTC/USD</td>
+                                                <td class="crypt-down text-center">BUY</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="text-center">SELL Cancelled</td>
+                                                <td title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>BTC/USD</td>
+                                                <td class="text-center">BUY Cancelled</td>
+                                                <td title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-up">BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-up">BTC/USD</td>
+                                                <td class="crypt-up text-center">BUY</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-up" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-down">BTC/USD</td>
+                                                <td class="crypt-down text-center">BUY</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.000056</td>
+                                                <td class="crypt-down" title="" data-toggle="tooltip" data-placement="right" data-original-title="$ 0.1">0.0003456</td>
+                                                <td>5.3424984</td>
+                                            <td>5.3424984 USD</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="balance">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Fee</th>
+                                                <th scope="col">Total Balance</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-up">+ 5.3424984 USD</td>
+                                                <td>-</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-down">- 5.3424984 USD</td>
+                                                <td>-</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-down">- 5.3424984 USD</td>
+                                                <td>-</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>5.3424984 USD</td>
+                                                <td>0.00001 USD</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td>5.3424984 USD</td>
+                                                <td>0.00001 USD</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th> 
+                                                <td>5.3424984 USD</td>
+                                                <td>0.00001 USD</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2020-06-30 22:35:59</th>
+                                                <td class="crypt-up">+ 5.3424984 USD</td>
+                                                <td>-</td>
+                                                <td>5.3424984 USD</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div>
+                    <div class="crypt-market-status">
+                        <div>
+                            <ul class="nav nav-tabs">
+                            <li role="presentation" class="crypt-box-infotext"><p>Cryptocurrency News</p></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active show" id="crypt-news">
+                                <ul class="table table-striped">       
+                                    <li>
+                                        <a href="#">
+                                            <strong>Here's News Title</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <strong>30.06.2020 22:50</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Here's News Title</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <strong>30.06.2020 22:50</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Here's News Title</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <strong>30.06.2020 22:50</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Here's News Title</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <strong>30.06.2020 22:50</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Here's News Title</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <strong>30.06.2020 22:50</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Here's News Title</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <strong>30.06.2020 22:50</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="balance">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Currency</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Volume</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>BTC</th>
+                                            <td>0.0000564</td>
+                                            <td>6.6768876</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ETC</th>
+                                            <td>0.000056</td>
+                                            <td>5.3424984</td>
+                                        </tr>
+                                        <tr>
+                                            <th>LTC</th>
+                                            <td>0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr>
+                                            <th>XMR</th>
+                                            <td>0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr>
+                                            <th>BIT</th>
+                                            <td>0.0000567</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr>
+                                            <th>EGF</th>
+                                            <td>0.0000234</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                        <tr>
+                                            <th>EER</th>
+                                            <td>0.0000567</td>
+                                            <td>4.3456600</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-bar-area">
+        <div class="container">
+            <div class="row">
+                <div class="footer-bar-contain col-lg-12 col-12">
+                    <div class="footer-bar-flat">
+                        <h3>Start Learning Trade Now. Completely Free!</h3>
+                        <div class="footer-bar-flat-button">
+                            <button class="btn btn-lg btn-yellow">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a href="#" class="logo-footer">
+                        <img src="images/logo.png" height="36" alt="">
+                    </a>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="list-unstyled social-icon social mb-0 mt-4">
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d">
+                    <h4 class="text-light footer-head">Company</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="contact-us.html" class="text-foot anim-b-line">Contact Us</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Our Back Accounts</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Team</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Career</a></li>
+                        <li><a href="login.html" class="text-foot anim-b-line">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d">
+                    <h4 class="text-light footer-head">Fast Conversions</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot anim-b-line">Terms of Services</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Privacy Policy</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Changelog</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Licenses</a></li>
+                        <li><a href="#" class="text-foot anim-b-line">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 pt-sm3d">
+                    <h4 class="text-light footer-head">Address</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot anim-b-line"><i class="fas fa-address-book mr-1"></i> 123 1th Street, New York, NY 00000, United States</a></li>
+                        <li><a href="tel:+11234567890" class="text-foot anim-b-line"><i class="fas fa-phone-alt mr-1"></i> +1 (123) 456 7890</a></li>
+                        <li><a href="mailto:hello@jouve.team" class="text-foot anim-b-line"><i class="fas fa-mail-bulk mr-1"></i> hello@jouve.team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer divider divider-fade divider-dark"></div>
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-left">
+                        <p class="mb-0">© 2020 CryptoEX. Created with <i class="fas fa-heart text-danger"></i> by <a href="https://github.com/oguzhnatly/Cryptocurrency-Trade-FrontEnd-HTML-Page" class="text-reset anim-b-line">Oguzhan Atalay</a>.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <ul class="list-unstyled text-sm-right mb-0">
+                        <li class="list-inline-item"><a><img class="payment-logos" src="images/payments/visa.svg" title="Visa" alt=""></a></li>
+                        <li class="list-inline-item"><a><img class="payment-logos" src="images/payments/mastercard.svg" title="Mastercard" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <!-- Chart Scripts -->
+    <script src="js/Chart.min.js"></script>
+    <script src="amc/charts-core.min.js"></script>
+    <script src="amc/charts.min.js"></script>
+    <!-- Bootsrap Scripts -->
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/sweetalert.js"></script>
+    <!-- Main Scripts -->
+    <script src="js/main.min.js"></script>
+    <script src="https://s3.tradingview.com/tv.js"></script>
+</body>
+</html>
